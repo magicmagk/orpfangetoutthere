@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число: Розыгрыш с сироткой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>ХЕЙ ПЁС, ДА Я ТЕБЕ СИРОТА</h1>
+        <div id="stats" class="stats">Побед: 0 | Поражений: 0</div>
+        
+        <div class="rules">
+            Правила: 10 попыток, по 7 секунд на каждую. И берегись заминированных чисел!
+        </div>
+
+        <div id="timer-box" class="timer-box">Осталось времени: <span id="time-left">7</span>с</div>
+        <div id="bounds" class="bounds">Границы: от 1 до 100</div>
+
+        <div class="input-section">
+            <input type="number" id="user-input" placeholder="Введи число..." autofocus>
+            <button id="submit-btn" onclick="makeGuess()">Ввести</button>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
